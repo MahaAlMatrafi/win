@@ -1,8 +1,11 @@
-<?php  
-$conn = mysqli_connect('localhost','root','root','win');
-if(!$conn){
-    echo 'Error: '. mysqli_connect_error();
-}
 
-include './inc/db.php';
+
+<?php 
+$host ="localhost";
+$user ="root";
+$pass ="";
+$db_name="win"; 
+
+$conn =mysqli_connect($host,$user,$pass,$db_name); 
+
 ?>
